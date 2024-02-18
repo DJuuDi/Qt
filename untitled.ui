@@ -6,69 +6,230 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>311</width>
-    <height>247</height>
+    <width>576</width>
+    <height>478</height>
    </rect>
   </property>
   <property name="windowTitle">
-   <string>MainWindow</string>
+   <string>easy Editor</string>
   </property>
   <property name="styleSheet">
-   <string notr="true">background:yellow</string>
+   <string notr="true">background: rgb(255, 251, 114)rgb(160, 176, 137)rgb(190, 182, 142)rgb(189, 200, 151)rgb(112, 125, 90);
+color: rgb(255, 255, 191);
+</string>
   </property>
   <widget class="QWidget" name="centralwidget">
-   <widget class="QPushButton" name="generate_password">
+   <widget class="QLineEdit" name="title_edit">
+    <property name="geometry">
+     <rect>
+      <x>240</x>
+      <y>20</y>
+      <width>321</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border-radius: 7px;
+background: rgb(191, 204, 130);
+color: black;</string>
+    </property>
+   </widget>
+   <widget class="QTextEdit" name="text_edit">
+    <property name="geometry">
+     <rect>
+      <x>240</x>
+      <y>50</y>
+      <width>321</width>
+      <height>381</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border-radius: 7px;
+background: rgb(191, 204, 130);
+color: black;</string>
+    </property>
+   </widget>
+   <widget class="QListWidget" name="noet_list">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>40</y>
+      <width>211</width>
+      <height>111</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border-radius: 7px;
+background: rgb(191, 204, 130);
+color: black;</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="create_btn">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>190</y>
+      <width>101</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border-radius: 7px;
+background: rgb(191, 204, 130);
+color: black;</string>
+    </property>
+    <property name="text">
+     <string>створити замітку</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="delete_btn">
     <property name="geometry">
      <rect>
       <x>120</x>
-      <y>130</y>
-      <width>81</width>
-      <height>17</height>
+      <y>190</y>
+      <width>101</width>
+      <height>23</height>
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">color:yellow;
-background:black</string>
+     <string notr="true">border-radius: 7px;
+background: rgb(191, 204, 130);
+color: black;</string>
     </property>
     <property name="text">
-     <string>змінити пароль</string>
+     <string>видалити замітку</string>
     </property>
    </widget>
-   <widget class="QLabel" name="password_labl">
+   <widget class="QListWidget" name="noet_lnst">
     <property name="geometry">
      <rect>
-      <x>130</x>
-      <y>100</y>
-      <width>61</width>
-      <height>16</height>
+      <x>10</x>
+      <y>240</y>
+      <width>211</width>
+      <height>91</height>
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">color:black
-</string>
+     <string notr="true">border-radius: 7px;
+background: rgb(191, 204, 130);
+color: black;</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="save_btn">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>160</y>
+      <width>141</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border-radius: 7px;
+background: rgb(191, 204, 130);
+color: black;</string>
     </property>
     <property name="text">
-     <string>тут буде пароль</string>
+     <string>зберегти замітку</string>
     </property>
-    <property name="textInteractionFlags">
-     <set>Qt::LinksAccessibleByMouse|Qt::TextSelectableByMouse</set>
+   </widget>
+   <widget class="QPushButton" name="add_teg_btn">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>400</y>
+      <width>131</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border-radius: 7px;
+background: rgb(191, 204, 130);
+color: black;</string>
+    </property>
+    <property name="text">
+     <string>додати до замітки</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="unpin_teg_btn">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>370</y>
+      <width>131</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border-radius: 7px;
+background: rgb(191, 204, 130);
+color: black;</string>
+    </property>
+    <property name="text">
+     <string>відкріпити від замітки</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="search_l">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>340</y>
+      <width>131</width>
+      <height>20</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="search_teg_btn">
+    <property name="geometry">
+     <rect>
+      <x>150</x>
+      <y>340</y>
+      <width>75</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border-radius: 7px;
+background: rgb(191, 204, 130);
+color: black;</string>
+    </property>
+    <property name="text">
+     <string>шукати тег</string>
     </property>
    </widget>
    <widget class="QLabel" name="label">
     <property name="geometry">
      <rect>
-      <x>120</x>
-      <y>60</y>
-      <width>79</width>
-      <height>10</height>
+      <x>90</x>
+      <y>220</y>
+      <width>71</width>
+      <height>16</height>
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">color:black
-</string>
+     <string notr="true">
+color: black;</string>
     </property>
     <property name="text">
-     <string>рандомайзер паролів</string>
+     <string>Список тегів</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>90</x>
+      <y>10</y>
+      <width>81</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">
+
+color: black;</string>
+    </property>
+    <property name="text">
+     <string>Список заміток</string>
     </property>
    </widget>
   </widget>
@@ -77,8 +238,8 @@ background:black</string>
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>311</width>
-     <height>18</height>
+     <width>576</width>
+     <height>21</height>
     </rect>
    </property>
   </widget>
